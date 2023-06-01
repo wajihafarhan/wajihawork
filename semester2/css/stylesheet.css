@@ -1,0 +1,74 @@
+ a:link{
+        color:white;
+        background-color: black;
+        border:2px solid white ;
+    }
+    a:visited{
+color:white;
+background-color: brown;
+border: 2px solid white;
+    }
+    a:hover{
+color: black;
+background-color: white;
+border: 2px solid white;
+    }
+        .Cl_pFirstline::first-line {
+            font-size: 30px;
+            background-color: teal;
+
+        }
+
+        .pfirstletter::first-letter {
+            font-size: 50px;
+            background-color: teal;
+        }
+
+        .div1 {
+            background: turquoise;
+            text-align: center;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            justify-content: end;
+        }
+
+        .navbar ul li {
+            padding: 20px 20px;
+            color: white;
+            font-weight: bold;
+          
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav {
+            background-color: darkblue;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            color:white
+        }
+
+        .active {
+            background-color: darkcyan;
+        }
+     span{
+        color:red;
+     }
+        .divlogo{
+            display: flex;
+        }
+        .navbar{
+            justify-content: space-between;
+        }
+       

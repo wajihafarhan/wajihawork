@@ -1,0 +1,43 @@
+[ {
+  "id": 0,
+  "name": "Javeria Shah",
+  "email":"javeria90@gmail.com",
+  "city":"Karachi"
+
+ },
+   {
+    "id": 1,
+    "name": "Maria Khan",
+    "email":"maria02@gmail.com",
+    "city":"Pishawar"
+
+   },
+    {
+    "id": 2,
+    "name": "Sarim Shah",
+    "email":"sarim956@gmail.com",
+    "city":"Lahore"
+    
+   },
+    {
+      "id": 3,
+      "name": "Faiza Shahid",
+      "email":"faiza45@gmail.com",
+      "city":"islamabad"
+      
+     },
+     {
+      "id": 4,
+      "name": "Areesha Noor",
+      "email":"areeshanoor09@gmail.com",
+      "city":"Karachi"
+      
+     },
+     {
+      "id": 5,
+      "name": "Farhan Khalid",
+      "email":"farhan4309@gmail.com",
+      "city":"Lahore"
+      
+     }
+]

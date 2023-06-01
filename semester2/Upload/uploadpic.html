@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
+    <title>Task</title>
+    <style>
+        #upload_img{
+            display: none;
+        }
+       #img_box{
+        background-image: url(../img/backgroung.jfif);
+    
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+            width: 450px;
+            margin: auto;
+        }
+        .icon{
+    
+        
+        }
+     
+    </style>
+</head>
+<body>
+
+   <center> <h1>Upload Image With JavaScript</h1></center>
+    <div id="img_box" class="imgdiv">
+    <input id="upload_img" type="file" accept="image/*" name="image" onchange="loadFile()">
+
+    <label for="upload_img"><i class=" fa fa-cloud-upload icon" aria-hidden="true"></i></label>
+</div>
+
+    <script>
+        var upload_img = document.getElementById("upload_img");
+var img_box = document.getElementById("img_box");
+ function loadFile() {
+    img_box.style.background_image =  URL.createObjectURL(upload_img.files[0])
+    
+}
+
+
+
+
+// var img_box = document.getElementById("img_box"); 
+
+// function loadFile(){
+//     img_box.src= URL.createObjectURL(img_input.files[0])
+// }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <input type="text" id="ID_signupinput">
+    <button type="button" onclick="btnSignup()">Sign up</button>
+    <h1>Login</h1>
+    <input type="text" id="ID_logininput">
+    <button type="button" onclick="btnLogin()">Login</button>
+    
+    <script>
+        var userdata = []
+        function btnSignup() {
+           
+            // userdata = JSON.parse(localStorage.getItem("userdata"))
+
+            var ID_signupinput = document.getElementById("ID_signupinput").value;
+            var id = userdata.length +1;
+            var UserObj = {
+                ID: id,
+                name: ID_signupinput
+            }
+            userdata.push(UserObj)
+            localStorage.setItem("userdata",JSON.stringify(userdata))
+        }
+        function btnLogin() {
+            var Fetchuserdata = JSON.parse(localStorage.getItem("userdata"))
+            var ID_logininput = document.getElementById("ID_signupinput").value;
+     var res = Fetchuserdata.some (x => x.name === ID_logininput)
+        
+            if (res) {
+                alert("login")
+            }
+            else {
+                alert("create your account")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

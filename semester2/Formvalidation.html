@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#error1 , #error2 , #error3 , #error4 , #error5{
+    color: red;
+    display: none;
+}
+    </style>
+</head>
+<body>
+<form action>
+    <fieldset>
+        <legend>Registration Form</legend>
+            <div>
+                <label for="">First Name</label>
+                <input type="text" class="input" id="firstname">
+                <p id="error1">Enter your First Name</p>
+    </div><br><br>
+            <div>
+                <label for="">Last Name</label>
+                <input type="text" class="input" id="lastname">
+                <p id="error2">Enter your Last Name</p>
+            </div><br><br>
+            <div>
+                <label for="">Phone No</label>
+                <input type="number" class="input" id="phoneno">
+                <p id="error3">Enter your Phone No </p>
+            </div><br><br>
+            <div>
+                <label for="">E-mail</label>
+                <input type="email" class="input" id="email">
+                <p id="error4">Enter your E-mail</p>
+            </div><br><br>
+            <div>
+                <label for="">Password</label>
+                <input type="password" class="input" id="password">
+                <p id="error5">Enter your Password</p>
+            </div><br><br>
+           <button type="button" class="btn" onclick="btnSubmit()">Submit</button>
+       
+    </fieldset>
+</form>
+<script> 
+function btnSubmit(){
+    var firstname = document.getElementById("firstname").value
+    var lastname = document.getElementById("lastname").value
+    var phoneno = document.getElementById("phoneno").value
+    var email = document.getElementById("email").value
+    var password = document.getElementById("password").value
+var error1 =  document.getElementById("error1")
+var error2 =  document.getElementById("error2")
+var error3 =  document.getElementById("error3")
+var error4 =  document.getElementById("error4")
+var error5 =  document.getElementById("error5")
+    if(firstname == ''){
+        error1.style.display = 'block'
+
+    }
+    else if(lastname == ''){
+        error2.style.display = 'block'
+    }
+    else if(phoneno == ''){ 
+       error3.style.display = 'block'
+    }
+else if(email == ''){
+    error4.style.display = 'block'
+}
+else if(password == ''){
+    error5.style.display = 'block'
+}
+else{
+    alert("Successfully Submitted")
+}
+}
+
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMW Practical  </title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<style>
+    body{
+        margin: 15px;
+    }
+    .flex{
+        display: flex ;
+     
+    }
+    .cards{
+        background-color: rgb(151, 149, 149);
+        margin: 7px;
+        align-items: center;
+    }
+    .img{
+        padding: 5px;
+width:170px
+    }
+    .aside{
+      background-color: lightgray;}
+      .button{
+        border-radius: 10px;
+      }
+  
+</style>
+</head>
+<body>
+    <div class="row justify-content-start">
+        <div class="col-8">
+          <center> <h1>DMW Practical</h1></center>
+
+    <div class="flex">
+    <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 1','$5000')">
+        <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+        <div class="card-body">
+          
+          <p class="card-text">Product 1<br>
+        5000</p>
+       
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 2','$3000')">
+        <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+        <div class="card-body">
+          
+          <p class="card-text">Product 2<br>
+        3000</p>
+       
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 3','$8000')">
+        <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+        <div class="card-body">
+          
+          <p class="card-text">Product 3<br>
+        8000</p>
+       
+        </div>
+      </div>
+      <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 4','$9000')">
+        <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+        <div class="card-body">
+          
+          <p class="card-text">Product 4<br>
+        9000</p>
+       
+        </div>
+      </div>
+    </div>
+   
+    <div class="flex">
+        <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 5','$5000')">
+            <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+            <div class="card-body">
+              
+              <p class="card-text">Product 5<br>
+            5000</p>
+           
+            </div>
+          </div>
+          <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 6','$3000')">
+            <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+            <div class="card-body">
+              
+              <p class="card-text">Product 6<br>
+            3000</p>
+           
+            </div>
+          </div>
+          <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 7','$4000')">
+            <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+            <div class="card-body">
+              
+              <p class="card-text">Product 7<br>
+            4000</p>
+           
+            </div>
+          </div>
+          <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 8','&7000')">
+            <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+            <div class="card-body">
+              
+              <p class="card-text">Product 8<br>
+            7000</p>
+           
+            </div>
+            
+          </div>
+        </div>
+        <div class="flex">
+            <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 9','$5000')">
+                <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  
+                  <p class="card-text">Product 9<br>
+                5000</p>
+               
+                </div>
+              </div>
+              <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 10','$3000')">
+                <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  
+                  <p class="card-text">Product 10<br>
+                3000</p>
+               
+                </div>
+              </div>
+              <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 11','$4000')">
+                <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  
+                  <p class="card-text">Product 11<br>
+                4000</p>
+               
+                </div>
+              </div>
+              <div class="card cards" style="width: 18rem;" onclick="btnclick('Product 12','$7000')">
+                <img src="images-removebg-preview.png" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  
+                  <p class="card-text">Product 12<br>
+                7000</p>
+               
+                </div>
+                
+              </div>
+            </div>
+        </div>
+        <div class="col-4 aside">
+       <center><h1 >Products</h1></center>  
+       <div id="prices"></div>
+       <br>
+       <button type="button" class="button">Checkout</button>
+        </div>
+      </div>
+ 
+      
+   
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function btnclick(product,price){
+            document.getElementById("prices").innerHTML += product + price + '<br>'
+        }
+    </script>
+</body>
+</html>

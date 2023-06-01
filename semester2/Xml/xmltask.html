@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xml Task</title>
+    
+</head>
+
+<body>
+    <h1>GET XML DATA WITH AJAX</h1>
+    <div id="content"></div>
+    <button type="button" id="ID_fetchdata">Show Data</button>
+   
+
+
+
+    <script src="../bootstrap/js/jquery-3.6.3.min.js"></script>
+<script>
+    $(document).ready(function () {
+   $('#ID_fetchdata').on("click",function(){
+
+    $.ajax({
+         url:"testing.xml",
+        type:"GET",
+        // dataType:"text",
+        success: function (data){
+    
+              $(data).find('catalog').each(function(){
+                $(this).find('book').each (function(){
+                    var author = $(this).find('author').text()
+                        var description = $(this).find('description').text()
+                        $("#content").append('<li>' + author + " ," + description + '<li>');
+          })  });
+       
+         },
+       
+        error: function (error) {
+            console.log(error);
+            
+        }
+     
+    }) 
+})
+
+    })
+ 
+</script>
+   
+</body>
+
+</html>

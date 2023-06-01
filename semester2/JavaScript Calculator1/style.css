@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    font-size: 43px;
+}
+.calculatorform{
+text-align: center;
+}
+.main{
+
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    border: 5px solid rgb(151, 150, 150);
+    border-radius: 15px;
+    background-color: black;
+   }
+
+
+   .screen{
+    width:184px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+   background-color: rgb(201, 193, 193);
+   border:4px double rgb(151, 150, 150);
+}
+.btn{
+    padding: 5px;
+   
+}
+.button{
+    height: 43px;
+    width: 45px;
+    border-radius: 12px;
+    font-size: 20px;
+      background-color: rgb(202, 146, 240);
+    border:3px solid rgb(151, 150, 150);
+    margin-top: 5px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 25px;
+        }
+        .box1{
+            color: rgb(15, 15, 15);
+           
+          text-align: center;
+            height: 100px;
+            width: 160px;
+            background-color: brown;
+        }
+        .box2{
+            color: rgb(15, 15, 15);
+         
+          text-align: center;
+            height: 100px;
+            width: 160px;
+            background-color: rgb(42, 12, 126);
+        }
+        .box3{
+            color: rgb(15, 15, 15);
+       
+          text-align: center;
+            height: 100px;
+            width: 160px;
+            background-color: rgb(46, 199, 135);
+        }
+        .box4{
+            color: rgb(15, 15, 15);
+          
+          text-align: center;
+            height: 100px;
+            width: 160px;
+            background-color: rgb(255, 81, 12);
+        }
+        .box5{
+            color: rgb(15, 15, 15);
+          
+          text-align: center;
+            height: 100px;
+            width: 160px;
+            background-color: rgb(25, 223, 213);
+        }
+        .box6{
+            color: rgb(15, 15, 15);
+           
+          text-align: center;
+            height: 100px;
+            width: 160px;
+            background-color: rgb(204, 30, 117);
+        }
+        .box7{
+            color: rgb(15, 15, 15);
+          
+          text-align: center;
+            height: 100px;
+            width: 160px;
+            background-color: rgb(183, 240, 51);
+        }
+        .main{
+            display: flex;
+            padding:40px ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <div class="box1" onclick=" btnclick('working')">onclick</div>
+    <div class="box2" onmousedown=" btnmousedown('btndown')"> onmousedown</div>
+    <div class="box3" onmouseup=" btnmouseup('btnup')">onmouseup</div>
+    <div class="box4" ondblclick=" btndblclick('btndblclick')">ondblclick</div>
+    <div class="box5" onmousemove=" btnmousemove('btnmoving')">onmove</div>
+    <div class="box6" onmouseover=" btnmouseover('btnover')">onmouseover</div>
+    <div class="box7" onmouseout=" btnmouseout('btnout')">onmouseout</div>
+</div>
+    <!-- <p id="ID_p"></p>
+    <button onclick="btnclick()">+</button> -->
+    <script>
+        function btnclick(x){
+            alert(x)
+        }
+        function btnmousedown(param){
+            alert(param)
+        }
+        function btnmouseup(param){
+            alert(param)
+        }
+        function btndblclick(param){
+            alert(param)
+        }
+        function btnmousemove(param){
+            alert(param)
+        }
+        function btnmouseover(param){
+            alert(param)
+        }
+        function btnmouseout(param){
+            alert(param)
+        }
+        // var num1 = 0;
+        // function btnclick(){
+        //     var ID_p = document.getElementById("ID_p")
+        //     var x = 1;
+        //     num1 += x++;
+        //     ID_p.innerHTML = num1;
+
+        // }
+//switch //
+//         var stdData = [
+//  {ID: 1, name: "maria", email:"maria07@gmail.com"},
+//  {ID: 2, name: "batool", email:"batool06@gmail.com"},   
+//  {ID: 3, name: "marium", email:"marium04@gmail.com"},
+//  {ID: 4, name: "hafsa", email:"hafsa67@gmail.com"},
+//  {ID: 5, name: "javeria", email:"javeria13@gmail.com"},
+
+//         ]
+//         document.write(stdData[0].email + " " + stdData[3].email)//
+
+
+     </script>
+</body>
+</html>

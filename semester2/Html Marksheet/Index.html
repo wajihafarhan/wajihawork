@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+   <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="main">
+    <h1><u>STUDENT MARKSHEET</u></h1>
+    <form action="">
+<fieldset >
+<legend ><u>STUDENT INFORMATION</u></legend>
+<div class="form">
+<label>Name:</label>
+<input type="text" id="ID_input1" >
+<label> Father Name:</label>
+<input type="text" id="ID_input2" ><br><br>
+<label> Institute Name:</label>
+<input type="text" id="ID_input3" >
+<label>Batch:</label>
+<input type="text" id="ID_input4">
+</div>
+</fieldset>
+   </form><br> 
+   <form action="">
+    <fieldset >
+    <legend ><u>SUBJECTS MARKS</u></legend>
+    <label>Office Automation:</label>
+    <input class="input" type="text" id="ID_num1" > Out of 100
+    <br><br>
+    <label>Web Designing:</label>
+    <input class="input" type="text" id="ID_num2"> Out of 100
+    <br><br>
+    <label> IT:</label>
+    <input class="input" type="text" id="ID_num3"> Out of 100
+<br><br>
+    <label>C# Programing:</label>
+    <input class="input" type="text" id="ID_num4"> Out of 100
+    <br><br>
+    
+<button class="btn" type="button" onclick="btnSubmit()">Submit</button>
+<button class="btn" type="button" onclick="btnReset()">Reset</button>
+
+    </fieldset>
+       </form><br>
+     
+
+       
+<table border="">
+<tr>
+<td colspan="2"><center><b>Student Information</b></center></td>
+
+</tr>
+<tr>
+    <td>Name:</td>
+<td id="ID_name"></td>
+</tr>
+<tr>
+    <td>Father Name:</td>
+<td id="ID_fathername"></td>
+</tr>
+<tr>
+    <td>Institute Name:</td>
+    <td id="ID_institutename"></td>
+</tr>
+<tr>
+    <td>Batch:</td>
+<td id="ID_batch"></td>
+</tr>
+<tr>
+   <td colspan="2"> <center><b>Subjects marks</b></center></td>
+   
+</tr>
+<tr>
+    <td>Office Automation:</td>
+<td id="num1"></td>
+</tr>
+<tr>
+    <td>Web Designing:</td>
+<td id="num2"></td>
+</tr>
+<tr>
+    <td>IT:</td>
+<td id="num3"></td>
+</tr>
+<tr>
+    <td>C# Programing:</td>
+<td id="num4"></td>
+</tr>
+
+</table>
+
+</div>
+
+<script>
+function btnSubmit(){
+    var ID_input1 = document.getElementById("ID_input1").value
+    document.getElementById("ID_name").innerHTML = ID_input1
+    var ID_input2 = document.getElementById("ID_input2").value
+    document.getElementById("ID_fathername").innerHTML = ID_input2
+    var ID_input3 = document.getElementById("ID_input3").value
+    document.getElementById("ID_institutename").innerHTML = ID_input3
+    var ID_input4 = document.getElementById("ID_input4").value
+    document.getElementById("ID_batch").innerHTML = ID_input4
+
+    var ID_num1 = document.getElementById("ID_num1").value
+    document.getElementById("num1").innerHTML = ID_num1
+    var ID_num2 = document.getElementById("ID_num2").value
+    document.getElementById("num2").innerHTML = ID_num2
+    var ID_num3 = document.getElementById("ID_num3").value
+    document.getElementById("num3").innerHTML = ID_num3
+    var ID_num4 = document.getElementById("ID_num4").value
+    document.getElementById("num4").innerHTML = ID_num4
+}
+function btnReset(){
+    document.getElementById("ID_input1").value = ""
+       document.getElementById("ID_input2").value = ""
+       document.getElementById("ID_input3").value = ""
+      document.getElementById("ID_input4").value = ""
+          document.getElementById("ID_num1").value = ""
+      document.getElementById("ID_num2").value = ""
+      document.getElementById("ID_num3").value = ""
+       document.getElementById("ID_num4").value = ""
+
+    document.getElementById("ID_name").innerHTML = ""
+    document.getElementById("ID_fathername").innerHTML = ""
+    document.getElementById("ID_institutename").innerHTML =""
+    document.getElementById("ID_batch").innerHTML = ""
+    document.getElementById("num1").innerHTML = ""
+    document.getElementById("num2").innerHTML = ""
+    document.getElementById("num3").innerHTML = ""
+    document.getElementById("num4").innerHTML = ""
+}
+
+    
+</script>
+
+</body>
+</html>

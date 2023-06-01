@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload And Display Image In Html</title>
+    <style>
+      
+.card{
+    height: 450px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+input{
+    display: none;
+}
+label{
+ border-radius: 5px;
+ padding: 15px;
+    background: black;
+    color: #fff;
+   cursor: pointer;
+}
+#img_box{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 40px;
+   border-radius: 50%;
+}    
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body> 
+      <h1>Upload And Display Image In Html</h1>
+     <div class="card">
+   <img src="../img/Moon.jfif" id="img_box"></img>
+        <input type="file" accept="image/*" id="img_input" onchange="loadFile()">
+        <br>
+        <label for="img_input">Upload</label>
+    </div>
+
+
+    <script>
+var img_input = document.getElementById("img_input");
+var img_box = document.getElementById("img_box"); 
+
+function loadFile(){
+    img_box.src= URL.createObjectURL(img_input.files[0])
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Task</title>
+    
+</head>
+
+<body>
+    <h1>GET DATA WITH AJAX</h1>
+     <p id="table_data"></p>
+  
+    <button type="button" id="ID_fetchdata">Show Data</button>
+   
+    
+  
+    <script src="bootstrap/js/jquery-3.6.3.min.js"></script>
+<script>
+    $(document).ready(function () {
+        
+   $('#ID_fetchdata').on("click",function(){
+
+    $.ajax({
+         url:"dummy.json",
+        type:"GET",
+        // dataType:"text",
+   
+      
+        success: function (data){
+              console.log(data);
+           
+            for(var i= 0 ; i < data.length ; i++){
+                document.getElementById('table_data').innerHTML += data[i].id +  data[i].name + data[i].email +  data[i].city+ '<br>';
+                
+            }
+        
+         },
+           
+            
+     
+        error: function (error) {
+            console.log(error);
+            
+        }
+     
+    }) 
+})
+    })
+</script>
+   
+</body>
+
+</html>

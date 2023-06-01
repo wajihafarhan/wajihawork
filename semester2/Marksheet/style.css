@@ -1,0 +1,141 @@
+body{
+    background-color: #547db6;
+    color: white;
+    font-family: sans-serif;
+    margin: 35px;
+}
+h1{
+   
+   text-align: center;
+   letter-spacing: 5px;
+}
+.div1{
+    
+    padding: 20px;
+    width: 45%;
+ margin-right: 15px;
+    border-radius: 10px;
+    background-color:#3662a0 ;
+}
+img{
+    height: 150px;
+    width: 150px;
+justify-content: center;
+
+}
+.content{
+    padding-left: 30px;
+    letter-spacing: 3px;
+}
+.degree{
+    
+    padding-top: 30px;
+}
+.km{
+    height: 30px;
+    width: 30px;
+}
+.flax1{
+     display: flex;
+    justify-content: center;
+}
+.divh4{
+    text-align: center;
+    letter-spacing: 3px; 
+  word-spacing: 4px;
+     border-bottom:2px solid white ;
+   padding-bottom: 20px;
+  
+}
+.flex2{
+    display: flex;
+}
+
+.divimg{
+    padding-top: 10px;
+    padding-right: 135px;
+   letter-spacing: 3px;
+}
+.div2{
+    margin-left: 15px;
+    padding: 20px;
+    width:45%;
+    border-radius: 10px;
+    background-color:#3662a0 ;
+}
+.divflex{
+    display: flex;
+    padding: 10px;
+    
+}
+P{
+   font-weight: bold;
+    font-size:13px;
+    background-color:#3662a0 ; 
+}
+.div3{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 18px;
+    justify-content: center;
+    width: 94.5%;
+    display: flex;
+    border-radius:10px;
+    background-color:#3662a0 ;
+}
+
+
+h4{
+    text-align: center; 
+   
+   
+}
+.mon{
+   
+    padding-left: 43px;
+    padding-right: 43px;
+    text-align: center; 
+ 
+    border-right:2px solid white ;
+}
+.tues{
+    padding-left: 43px;
+    padding-right: 43px;
+    text-align: center; 
+   
+    border-right:2px solid white ;
+}
+.wed{
+    padding-left: 43px;
+    padding-right: 43px;
+    text-align: center; 
+  
+    border-right:2px solid white ;
+}
+.thurs{
+    padding-left: 43px;
+    padding-right: 43px;
+    text-align: center; 
+    border-right:2px solid white ;
+}
+.fri{
+   
+    text-align: center; 
+    padding-left: 43px;
+    padding-right: 43px;
+   
+} 
+
+@media screen and (min-width:600px) {
+    body{
+   
+        
+    }
+   
+}
+@media screen and (min-width:768px) and (max-width: 1023px){
+    body{
+    
+        
+    }
+}

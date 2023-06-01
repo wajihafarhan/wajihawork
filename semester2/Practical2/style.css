@@ -1,0 +1,39 @@
+.heading1{
+    color: #2b4b80;
+    font-weight: bold;
+    font-size: 60px;
+}
+.btn1{
+   background-color: #ff5c97 !important;
+   border: #ff5c97 !important;
+   transition: color 0.4s linear !important;
+}
+.btn1 :hover{
+
+    background-color:black !important;
+}
+.btn2{
+    background-color:#4043bc !important; 
+    color: white !important;
+    border: white !important; 
+    font-weight: bold !important;
+}
+
+.arrow{
+    border-radius: 50% !important;
+    background-color: #7b40c0;
+    color: white;
+    padding: 6px;
+}
+.color{
+    color: #7b40c0 !important;
+}
+.icons{
+    padding-top: 20px;
+    height: 90px !important;
+ width:80px !important;
+}
+.cards{
+    align-items: center;
+    text-align: center;
+}

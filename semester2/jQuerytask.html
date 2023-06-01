@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Task</title>
+    <script src="bootstrap/js/jquery-3.6.3.min.js"></script>
+    <style>
+.div{
+   text-align: center;
+   border: 2px solid gray;
+   background-color: rgb(240, 238, 238);
+ 
+   display: inline-block;
+   padding: 50px;
+}
+#ID_input{
+   height:25px;
+}
+.btn{
+   height:30px;
+
+}
+    </style>
+</head>
+<body>
+   <div class="div">
+<h1>JQUERY APPEND AND PREPAND</h1>
+
+<h2>TASK</h2>
+<br>
+<input type="text" id="ID_input" >
+<button type="button" id="ID_add" class="btn">Add</button>
+<button type="button" id="ID_clear" class="btn">Clear</button>
+ <ol id="ID_list">
+
+ </ol>
+</div>
+
+    <script>
+      $(document).ready(function(){
+         $('#ID_add').click(function(){
+          var x =  $('#ID_input').val()
+          $('#ID_list').append('<li>' + x + '</li>')
+         })
+          $('#ID_clear').click(function(){
+          $('#ID_input').val('')
+        
+         })
+      })
+
+   </script>
+</body>
+</html>

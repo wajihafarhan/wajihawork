@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+ <div class="main">
+    <input type="text" class="screen" id="screen" readonly>
+<div class="btn">
+<button type="button" class="button" onclick="btnvalue('(')">(</button>
+<button type="button" class="button" onclick="btnvalue(')')">)</button>
+<button type="button" class="button" onclick="btnvalue('/')">/</button>
+<button type="button" class="button" onclick="btnclear()">C</button>
+</div>
+<div class="btn">
+    <button type="button" class="button" onclick="btnvalue('9')">9</button>
+    <button type="button" class="button" onclick="btnvalue('8')">8</button>
+    <button type="button" class="button" onclick="btnvalue('7')">7</button>
+    <button type="button" class="button" onclick="btnvalue('*')">*</button>
+    </div>
+    <div class="btn">
+        <button type="button" class="button" onclick="btnvalue('4')">4</button>
+        <button type="button" class="button" onclick="btnvalue('5')">5</button>
+        <button type="button" class="button" onclick="btnvalue('6')">6</button>
+        <button type="button" class="button" onclick="btnvalue('-')">-</button>
+        </div>
+        <div class="btn">
+            <button type="button" class="button" onclick="btnvalue('1')">1</button>
+            <button type="button" class="button" onclick="btnvalue('2')">2</button>
+            <button type="button" class="button" onclick="btnvalue('3')">3</button>
+            <button type="button" class="button" onclick="btnvalue('+')">+</button>
+            </div>
+            <div class="btn">
+                <button type="button" class="button" onclick="btnvalue('.')">.</button>
+                <button type="button" class="button" onclick="btnvalue('0')">0</button>
+                <button type="button" class="button" onclick="btnvalue('%')">%</button>
+                <button type="button" class="button" onclick="calculate()">=</button>
+                </div>
+</div>
+
+
+<script>
+ function btnvalue(param){
+    document.getElementById("screen").value += param
+ }
+ 
+ function btnclear() {
+      document.getElementById("screen").value = ""
+ }
+ function calculate(){
+    document.getElementById("screen").value = eval(document.getElementById("screen").value)
+ }
+</script>
+</body>
+</html>

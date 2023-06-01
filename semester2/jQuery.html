@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bootstrap/js/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+    <div id="ID_div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sapiente corporis quos rerum
+        voluptates praesentium deleniti at facilis similique ad accusamus impedit sed harum totam ducimus et eius,
+        cumque adipisci.</div>
+    <button type="button" id="show">Show</button>
+    <button type="button" id="hide">Hide</button>
+    <button type="button" id="toggle">Toggle</button>
+    <br><br>
+
+    <h2>User Input</h2>
+    <input type="text" class="input">
+    <button type="button" id="Submit">Submit</button>
+
+    <script>
+        $(document).ready(function () {
+            
+            $('#show').click(function () {
+                $('#ID_div').show()
+            })
+            $('#hide').click(function () {
+                $('#ID_div').hide()
+            })
+            $('#toggle').click(function () {
+                $('#ID_div').toggle()
+            })
+            $('#Submit').click(function () {
+                var x = $('.input').val()
+                alert(x)
+            })
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

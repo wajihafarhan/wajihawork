@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.Cl_bgimg{
+background: url(img/nature.jfif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-image: fixed;
+}
+.divAnimation{
+    width: 300px;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: wheat;
+    font-weight: bold;
+    position: relative;
+    border: 20px solid black;
+    animation: divAnimation 5s infinite;
+
+}
+@keyframes divAnimation{
+0% {backgrond:red;left:0px;top:0px}
+25%{background:yellow;left:300px;top:0px}
+50%{background:blue;left:300px;top:300px;}
+75%{background:green;left:0px;top:300px;}
+100%{background:red;left:0px;top:0px}
+}
+    </style>
+</head>
+
+<body>
+    <div class="divAnimation" >
+    DEMO
+       </div> 
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .DivAnimation {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            letter-spacing: 1px;
+            background-color: blue;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 15px solid black;
+            animation: demonstration 6s infinite;
+        }
+
+        /* @keyframes demonstration {
+            0% {
+                background: rgb(199, 37, 64);
+                left: 5px;
+                top: 0px;
+            }
+
+            25% {
+                background: orangered;
+                left: 300px;
+                bottom: 0px;
+            }
+
+            50% {
+                background: greenyellow;
+                left: 300px;
+                right: 300px;
+            }
+
+            75% {
+                background: lightblue;
+                left: 0px;
+                top: 300px;
+            }
+
+            100% {
+                background: purple;
+                left: 0px;
+                top: 0px;
+            }
+
+        } */
+      marquee{
+        font-size: 40px;
+        font-weight: 900;
+      }
+      .cl_before::before{
+        content: '🙄';
+      }
+    
+    </style>
+</head>
+
+<body>
+    <div class="cl_before">
+        NOTE
+
+    </div>
+    <h2>Animation with keyframes</h2>
+    <div class="DivAnimation">
+        Animation Div
+    </div>
+    <marquee behaviour="" direction="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor id aut. Possimus ut, quas incidunt autem
+        deleniti, ipsa ratione asperiores sed unde labore fuga ullam voluptatibus deserunt iste dolorem?
+    </marquee>
+ <!-- <video controls src="https://youtu.be/Lz6d1ZlEdPU"></video> -->
+ <iframe src="https://www.wikipedia.org/"></iframe>
+
+
+
+ <h2 id="name"></h2>
+ <script>
+// alert("hello world")
+console.log("working")
+document.write("This is Hareem")
+document.getElementById("name").innerHTML="demo"
+ </script>
+</body>
+
+</html>

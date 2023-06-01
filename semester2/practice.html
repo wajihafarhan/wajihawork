@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css/practice.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        
+    <style>
+        
+        .header {
+            display: flex;
+            background-color: darkblue;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        .divbar ul {
+            list-style: none;
+            color: white;
+            display: flex;
+
+
+        }
+
+
+
+
+        .header ul li {
+            padding: 10px 10px;
+            font-weight: bold;
+
+        }
+
+        body {
+
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .active {
+            background-color: lightslategray;
+            margin: 0;
+        }
+
+        .header ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .imgdiv {
+            display: flex;
+
+        }
+
+        .imgdiv img {
+            height: 50px;
+            width: 50px;
+            padding: 10px;
+
+        }
+
+
+        span {
+            color: aqua;
+        }
+
+        .apple {
+            letter-spacing: 15px;
+
+        }
+ .formdiv{
+    background: url(img/nature.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+     width: 100%;
+
+ }
+ .formdiv input{
+    background-color: rgb(230, 223, 223);
+    color: rgb(117, 115, 112);
+    border: none;
+           padding: 4px;
+           border-radius: 8px;
+           padding-left: 6px; 
+          
+            
+ }
+
+ 
+        .footerdiv {
+            background-color: black;
+            display: flex;
+            padding: 20px;
+
+
+        }
+
+        .bigimg img {
+            height: 150px;
+            width: 200px;
+            padding-left: 120px;
+            ;
+           }
+
+        .div1 {
+            
+            background-color: rgb(24, 23, 23);
+            padding: 40px;
+            border-radius: 5px;
+           
+            margin: 10px;
+            text-align: start;
+        }
+
+        .div2 {
+            margin: 10px;
+            padding: 40px;
+            justify-content: center;
+            background-color: rgb(8, 8, 8);
+        }
+        .div2 table tr td{
+            padding: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .div3 {
+            padding: 40px;
+            justify-content: center;
+            background-color: rgb(8, 8, 8);
+            margin: 10px;
+        }
+       .iconsdiv{
+padding: 10px 10px;
+
+       }
+        .facebook{
+            color: white;
+            background-color: rgb(58, 58, 250);
+            border-radius: 20px 20px;
+            border:none;
+            height: 30px;
+            width: 30px;
+ cursor: pointer;
+        }
+        .twitter{
+            color: white;
+            background-color: rgb(66, 183, 252);
+            border-radius: 20px 20px;
+            border:none;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+        .youtube{
+            color: white;
+            background-color: orangered;
+            border-radius: 20px 20px;
+            border:none;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+        .linked-in{
+ color: white;
+            background-color:rgb(65, 130, 252);
+            border-radius: 20px 20px;
+            border:none;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+        .dribble{
+            color: white;
+            background-color:rgb(197, 35, 7);
+            border-radius: 20px 20px;
+            border:none;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+
+        }
+     .mail input{
+            background-color: rgb(41, 35, 35);
+            border-radius: 15px;
+            border: none;
+            height: 30px;
+            width: 200px;
+            padding-left: 20px;
+        }
+        aside{
+            background-color: rgb(1, 227, 235);
+margin: 0; 
+width: 20%;
+
+        }
+        aside h2{
+            padding-left: 20px;
+        }
+        aside ul{
+            list-style: none;
+            padding-left: 20px;
+        }
+        .DIvflex{
+            display: flex;
+            
+          }
+          
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <div class="imgdiv"> <img src="img/apple.logo.png" alt="logo">
+                <h1 class="apple">A<span>P</span>PLE</h1>
+            </div>
+            <div class="divbar">
+                <ul>
+                    <li>Home</li>
+                    <li class="active"><a href="index2.html" target="_blank">About Us</a></li>
+                    <li>Contact Us</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="DIvflex">
+
+   
+    
+        
+        <div class="formdiv" >
+<form action="" >
+    
+<lable>Login:</lable>
+<input type="button" value="Login"><br><br>
+<lable>Username:</lable>
+<input type="text" placeholder="Username"><br><br>
+<lable>Email:</lable>
+<input type="email" placeholder="Email"><br><br>
+<lable>Password:</lable>
+<input type="password" placeholder="Password"><br><br>
+<lable>Date of Birth:</lable>
+<input type="date" name="date"><br><br>
+<lable>Phone No:</lable>
+<input type="contact" placeholder="Number"><br><br>
+<lable>Upload File:</lable>
+<input type="File" placeholder="File"><br><br>
+<lable>Select Your Course:</lable>
+<input type="checkbox" name="Html"> Html &nbsp;
+<input type="checkbox" name="Css"> Css
+<input type="checkbox" name="JavaScript"> JavaScript <br><br>
+<lable>Gender:</lable>
+<input type="radio" name="Male"value="1"> Male &nbsp;
+<input type="radio" name="Female"value="1"> Female <br><br>
+<lable>Submit:</lable>
+<input  type="button" value="Submit"><br><br>
+
+</form>
+</div>
+
+    <aside>
+       <h2>Aside</h2>
+        <ul>
+            <li>Facebook</li>
+            <li>Istagram</li>
+            <li>Snapchat</li>
+            <li>Youtube</li>
+            <li>Twitter</li>
+        </ul>
+
+    </aside> 
+</div>
+    <footer>
+        <div class="footerdiv">
+            <div class="div1">
+                <div class="bigimg">
+                    <img src="img/butterfly.jpg" alt="">
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt praesentium quasi, dignissimos,
+                    ipsum fugiat in, modi expedita necessitatibus quas perspiciatis ad recusandae dolores iusto vero
+                    error sint? Consequuntur, architecto ullam.</p>
+                <h3>Follow Us</h3>
+                <div class="iconsdiv">
+                    <button class="facebook"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="twitter"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="youtube"><i class="fa-brands fa-youtube"></i></button>
+                    <button class="linked-in"><i class="fa-brands fa-linkedin-in"></i></button>
+                   <button class="dribble"> <i class="fa-brands fa-dribbble"></i></button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="div2">
+                <div>
+                    <img src="" alt="">
+                    <h4>Jaipur India</h4>
+                    <p>5353 Road Avenue</p>
+                </div>
+                <h3>Useful Links</h3>
+
+                <table border="2">
+                    <tr>
+                        <th colspan="2">Full name</th>
+                        <th colspan="3">Accounts</th>
+                    </tr>
+                    <tr>
+                        <td>first name</td>
+                        <td>second name</td>
+                        <td>Name</td>
+                        <td >Location</td>
+
+
+                    </tr>
+                    <tr>
+                        <td rowspan="2">BMW</td>
+                        <td>328i</td>
+                        <td>28.25</td>
+                    </tr>
+                    <tr>
+                        <td>Our Team</td>
+                        <td>Faq</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="div3">
+                <div>
+                    <img src="" alt="">
+                    <h4>9571195353</h4>
+                    <p>Give us a call</p>
+                </div>
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda hic rem recusandae itaque
+                    explicabo ipsam .</p><br>
+                <form class="mail">
+                    <input type="email" placeholder="Email Address">
+                </form>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
